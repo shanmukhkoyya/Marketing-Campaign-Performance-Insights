@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/Status-Completed-16803c?style=flat-square" alt="Completed"/>
 </p>
 
+## Executive summary
+
+This analysis reviews 22,029 campaign records to identify patterns in conversion, ROI, acquisition cost, and engagement. The results show that engagement is not a dependable stand-alone indicator of conversion (correlation approximately 0.01), while performance varies across audiences, languages, channels, and locations. The practical business takeaway is to assess campaigns using outcome measures together, then refine targeting and budget decisions using segment- and location-level evidence.
+
 ## Project overview
 
 This project analyzes **22,029 marketing campaign records across 16 columns** to understand how campaign type, channel, audience, language, time, and location relate to marketing performance. The analysis focuses on conversion rate, acquisition cost, return on investment (ROI), and engagement.
@@ -43,7 +47,7 @@ The goal is not just to create charts, but to translate the analysis into clear 
 | Exploratory analysis | Summary statistics, grouping, aggregation, correlation |
 | Visualization | Matplotlib, Seaborn |
 | Analysis dimensions | Campaign, channel, audience, segment, language, date, location |
-| Deliverables | Jupyter Notebook, HTML notebook export, business insights and recommendations |
+| Deliverables | Jupyter Notebook, HTML notebook export, chart gallery, business insights and recommendations |
 
 ## Selected findings
 
@@ -69,7 +73,28 @@ The goal is not just to create charts, but to translate the analysis into clear 
 | [Jupyter Notebook](./Marketing_Campaign_Performance_Insights.ipynb) | Complete Python analysis, code, outputs, and visualizations |
 | [HTML Report](./Marketing_Campaign_Performance_Insights.html) | Browser-friendly notebook export with rendered analysis and charts |
 
-**For the full chart gallery:** open the [HTML report](./Marketing_Campaign_Performance_Insights.html). It preserves the executed notebook outputs and visualizations for convenient review without requiring Jupyter.
+### Visual chart gallery
+
+The gallery below provides a quick visual overview of the analysis. Open either image to view it at full size.
+
+<p align="center">
+  <a href="./campaign-analysis-gallery-1.jpg"><img src="./campaign-analysis-gallery-1.jpg" width="48%" alt="Marketing campaign analysis chart gallery, part 1" /></a>
+  <a href="./campaign-analysis-gallery-2.jpg"><img src="./campaign-analysis-gallery-2.jpg" width="48%" alt="Marketing campaign analysis chart gallery, part 2" /></a>
+</p>
+
+For the complete notebook outputs and visualizations, open the [HTML report](./Marketing_Campaign_Performance_Insights.html).
+
+## Repository structure
+
+```text
+Marketing-Campaign-Performance-Insights/
+├── README.md
+├── requirements.txt
+├── Marketing_Campaign_Performance_Insights.ipynb
+├── Marketing_Campaign_Performance_Insights.html
+├── campaign-analysis-gallery-1.jpg
+└── campaign-analysis-gallery-2.jpg
+```
 
 ## Dataset
 
@@ -87,9 +112,9 @@ The dataset is used for educational and portfolio analysis. Interpretations desc
    git clone https://github.com/shanmukhkoyya/Marketing-Campaign-Performance-Insights.git
    cd Marketing-Campaign-Performance-Insights
    ```
-2. Install the required libraries:
+2. Install the required libraries from the dependency file:
    ```bash
-   pip install pandas numpy matplotlib seaborn jupyter
+   pip install -r requirements.txt
    ```
 3. Launch Jupyter:
    ```bash
