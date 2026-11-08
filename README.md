@@ -84,6 +84,10 @@ The gallery below provides a quick visual overview of the analysis. Open either 
 
 For the complete notebook outputs and visualizations, open the [HTML report](./Marketing_Campaign_Performance_Insights.html).
 
+## Documentation
+
+- [Data Dictionary and Analysis Methodology](./docs/DATA_DICTIONARY_AND_METHODOLOGY.md) — field descriptions, analysis workflow, and interpretation limitations.
+
 ## Repository structure
 
 ```text
