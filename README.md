@@ -1,80 +1,95 @@
 # Marketing Campaign Performance Insights
 
-> A data analytics project exploring campaign effectiveness, customer engagement, acquisition costs, and return on investment (ROI) using Python.
+<p align="center">
+  <strong>Turning campaign data into practical marketing decisions</strong><br/>
+  Python · Pandas · NumPy · Matplotlib · Seaborn
+</p>
 
-## Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-Data%20Analytics-2563eb?style=flat-square" alt="Data analytics project"/>
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/Notebook-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Status-Completed-16803c?style=flat-square" alt="Completed"/>
+</p>
 
-This project analyzes **22,029 marketing campaign records across 16 columns** to understand how campaign performance varies by marketing type, channel, customer segment, language, company, and location.
+## Project overview
 
-The goal is to turn campaign data into practical business insights that can support better marketing decisions, campaign optimization, and budget allocation.
+This project analyzes **22,029 marketing campaign records across 16 columns** to understand how campaign type, channel, audience, language, time, and location relate to marketing performance. The analysis focuses on conversion rate, acquisition cost, return on investment (ROI), and engagement.
 
-## Business Questions
+The goal is not just to create charts, but to translate the analysis into clear findings and practical recommendations that can support campaign planning and budget decisions.
 
-- Which marketing channels and campaign types generate stronger engagement and conversion?
-- How do acquisition costs relate to campaign ROI?
-- Which customer segments perform best across different languages?
-- How does campaign performance vary by company and location?
-- What patterns appear in campaign activity and engagement over time?
+## Business questions
 
-## Tools & Technologies
+- How do acquisition cost and ROI vary across campaigns?
+- Which channels and campaign types show stronger conversion and engagement?
+- How does performance differ by customer segment, target audience, and language?
+- What patterns appear across campaign dates and locations?
+- How can the findings inform future campaign optimization?
 
-- **Python** – analysis and data processing
-- **Pandas, NumPy** – data cleaning, manipulation, and aggregation
-- **Matplotlib, Seaborn** – exploratory data analysis and visualization
-- **Jupyter Notebook** – analysis workflow and documentation
+## Analysis workflow
 
-## Analysis Workflow
+1. **Load and inspect** the dataset with Pandas.
+2. **Profile the data** using dimensions, data types, descriptive statistics, unique values, and category counts.
+3. **Explore campaign performance** across conversion rate, acquisition cost, ROI, and engagement.
+4. **Compare customer groups and channels** by segment, target audience, language, and channel.
+5. **Study time and geography** using date-based and location-based visualizations.
+6. **Translate findings into recommendations** for campaign evaluation and optimization.
 
-1. Loaded the campaign dataset into a Pandas DataFrame.
-2. Reviewed dataset structure, data types, descriptive statistics, and category distributions.
-3. Explored campaign performance across channels, campaign types, and companies.
-4. Analyzed customer segments and language-level conversion patterns.
-5. Examined time-based and geographic performance trends.
-6. Developed business insights and recommendations from the analysis.
+## Tools and techniques
 
-## Selected Findings
-
-- Social Media campaigns show relatively high engagement in the channel comparison.
-- Conversion rates are broadly similar across the marketing channels examined.
-- Engagement Score and Conversion Rate have a very weak correlation (**0.01**) in this dataset.
-- Campaign performance differs across customer segments and target audiences.
-- Average conversion rate is highest for English-language campaigns in the language comparison.
-- Acquisition Cost and ROI show a broad pattern in which higher-cost campaigns tend to have lower maximum ROI, although individual campaign results vary.
-
-## Business Recommendations
-
-- Evaluate campaigns using ROI and conversion rate alongside engagement metrics.
-- Identify high-performing audience segments and tailor campaigns to their needs.
-- Compare acquisition costs across channels and locations before reallocating budgets.
-- Continue monitoring channel performance rather than relying on engagement alone.
-- Review underperforming campaigns regularly and test improvements using measurable outcomes.
-
-## Repository Contents
-
-| File | Description |
+| Area | Methods |
 |---|---|
-| `Marketing_Campaign_Performance_Insights.ipynb` | Main notebook containing the analysis, code, visualizations, and findings |
-| `Marketing_Campaign_Performance_Insights.html` | Browser-friendly exported version of the notebook |
-| `requirements.txt` | Python libraries required to run the analysis |
+| Data handling | Python, Pandas, NumPy |
+| Exploratory analysis | Summary statistics, grouping, aggregation, correlation |
+| Visualization | Matplotlib, Seaborn |
+| Analysis dimensions | Campaign, channel, audience, segment, language, date, location |
+| Deliverables | Jupyter Notebook, HTML notebook export, business insights and recommendations |
+
+## Selected findings
+
+- The relationship between **Engagement Score** and **Conversion Rate** is very weak in this dataset (correlation approximately **0.01**). Engagement alone should therefore not be treated as a reliable indicator of conversion.
+- Average conversion rates are relatively close across the channels and campaign types examined.
+- Social Media campaigns show comparatively strong engagement across several channels.
+- Average conversion rate differs by language; English has the highest average in the analyzed dataset (approximately **5.01**).
+- The acquisition-cost versus ROI scatter plot shows a wide spread: higher acquisition-cost campaigns have a lower upper range of ROI, so cost should be assessed alongside campaign outcomes rather than in isolation.
+- ROI contribution is distributed across the ten locations, with individual location shares in a relatively narrow range.
+
+## Business recommendations
+
+1. Evaluate campaigns using **ROI and conversion rate together**, rather than relying on engagement metrics alone.
+2. Continue monitoring Social Media engagement while validating whether it translates into business outcomes.
+3. Identify stronger-performing audience and customer-segment combinations and use them to guide targeted campaigns.
+4. Compare acquisition costs and ROI across locations before reallocating marketing budgets.
+5. Review campaign performance regularly and optimize campaigns based on measurable outcomes.
+
+## Explore the deliverables
+
+| File | What it contains |
+|---|---|
+| [Jupyter Notebook](./Marketing_Campaign_Performance_Insights.ipynb) | Complete Python analysis, code, outputs, and visualizations |
+| [HTML Report](./Marketing_Campaign_Performance_Insights.html) | Browser-friendly notebook export with rendered analysis and charts |
+
+**For the full chart gallery:** open the [HTML report](./Marketing_Campaign_Performance_Insights.html). It preserves the executed notebook outputs and visualizations for convenient review without requiring Jupyter.
 
 ## Dataset
 
-The project uses the Marketing Campaign dataset published by ArchanaInsights:
+- **Source:** [Marketing Campaign Dataset](https://raw.githubusercontent.com/ArchanaInsights/Datasets/main/marketing_campaign.csv)
+- **Records:** 22,029
+- **Columns:** 16
+- **Coverage:** campaign details, customer/audience attributes, channels, performance metrics, date, and location.
 
-[Download the dataset (CSV)](https://raw.githubusercontent.com/ArchanaInsights/Datasets/main/marketing_campaign.csv)
+The dataset is used for educational and portfolio analysis. Interpretations describe patterns in this dataset and should not be treated as proof of causation.
 
-The dataset includes campaign identifiers, company, campaign type, target audience, duration, channel, conversion rate, acquisition cost, ROI, location, language, clicks, impressions, engagement score, customer segment, and date.
-
-## Run the Project
+## Run the notebook locally
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/shanmukhkoyya/Marketing-Campaign-Performance-Insights.git
    cd Marketing-Campaign-Performance-Insights
    ```
-2. Install dependencies:
+2. Install the required libraries:
    ```bash
-   pip install -r requirements.txt
+   pip install pandas numpy matplotlib seaborn jupyter
    ```
 3. Launch Jupyter:
    ```bash
@@ -82,11 +97,17 @@ The dataset includes campaign identifiers, company, campaign type, target audien
    ```
 4. Open `Marketing_Campaign_Performance_Insights.ipynb` and run the cells.
 
-## Author
+The notebook reads the dataset from the public CSV source linked above, so an internet connection is required when running the data-loading cell.
+
+## About
 
 **Shanmukh Koyya**  
-[GitHub Profile](https://github.com/shanmukhkoyya)
+Data Analytics | Python · SQL · Power BI
+
+- Email: [shanmukhkoyya1234@gmail.com](mailto:shanmukhkoyya1234@gmail.com)
+- LinkedIn: [linkedin.com/in/shanmukh-koyya](https://www.linkedin.com/in/shanmukh-koyya/)
+- GitHub: [github.com/shanmukhkoyya](https://github.com/shanmukhkoyya)
 
 ---
 
-*This project demonstrates practical skills in Python-based data analysis, exploratory data analysis, visualization, and translating findings into business recommendations.*
+<p align="center"><sub>Built as a practical data analytics portfolio project · Focused on evidence-led business insights</sub></p>
